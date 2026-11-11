@@ -15,6 +15,8 @@ Projenin temel araştırma sorusu:
 
 ## Veri Seti
 
+Kaynak: [UCI Machine Learning Repository — Bike Sharing](https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset)
+
 Projede `day.csv` dosyası kullanılmıştır.
 
 - Gözlem sayısı: **731 gün**
@@ -161,13 +163,9 @@ Gerekli paketleri yüklemek için:
 pip install -r requirements.txt
 ```
 
-Ardından Jupyter notebook çalıştırılabilir:
+Projeyi VS Code'da çalıştırmak için Python ve Jupyter eklentilerini yükleyin. `bike_sharing_project.ipynb` dosyasını açın, gerekli paketlerin yüklü olduğu Python ortamını kernel olarak seçin ve tüm hücreleri yukarıdan aşağıya çalıştırın.
 
-```bash
-jupyter notebook
-```
-
-veya proje VS Code üzerinden açılabilir.
+Notebook, proje kök klasörü çalışma dizini olacak şekilde çalıştırılmalıdır; veri dosyası `data/day.csv` yolundan okunur.
 
 ---
 
@@ -187,3 +185,5 @@ veya proje VS Code üzerinden açılabilir.
 ## Not
 
 Bu proje eğitim amaçlı hazırlanmıştır. EDA ve Linear Regression sonuçları veri setindeki gözlenen ilişkileri açıklamak ve günlük bisiklet kiralama talebine yönelik temel bir tahmin modeli oluşturmak amacıyla kullanılmıştır.
+
+Modelin performansı 2012-08-08–2012-12-31 test dönemiyle sınırlıdır. Testte gerçekleşmiş hava koşulları kullanılmıştır; önceden yapılacak tahminlerde hava tahminlerinin belirsizliği ayrıca değerlendirilmelidir.
